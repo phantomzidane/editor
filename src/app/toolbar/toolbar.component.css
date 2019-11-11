@@ -1,10 +1,6 @@
-.toolbar{
-    background-color: 	#3B484D;
-}
-.navbar-item{
-    color: white;
-}
-.spanback{
-   
-    padding: 10px 10px;
-}
+.end {
+    padding: 0 18px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }

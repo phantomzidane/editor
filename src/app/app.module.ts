@@ -7,7 +7,9 @@ import { LeftEditorComponent } from './left-editor/left-editor.component';
 import { RightEditorComponent } from './right-editor/right-editor.component';
 import { ContentComponent } from './content/content.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { MainComponent } from './main/main.component'
+import { MainComponent } from './main/main.component';
+import {MaterialsModule} from './materials/materials.module';
+import { PageComponent } from './page/page.component'
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { MainComponent } from './main/main.component'
     RightEditorComponent,
     ContentComponent,
     ToolbarComponent,
-    MainComponent
+    MainComponent,
+    PageComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialsModule
   
   ],
   providers: [],
