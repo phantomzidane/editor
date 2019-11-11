@@ -8,6 +8,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/';
+import {MatChipsModule} from '@angular/material/chips';
 const MaterialComponents=[
   MatButtonModule,
   MatGridListModule,
@@ -17,7 +18,8 @@ const MaterialComponents=[
   MatTabsModule,
   MatTreeModule,
   MatDividerModule,
-  MatListModule
+  MatListModule,
+  MatChipsModule
 ];
 @NgModule({
   imports: [
