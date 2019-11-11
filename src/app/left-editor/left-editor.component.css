@@ -1,0 +1,24 @@
+.left{
+    overflow-y: scroll;
+}
+.mainColor{
+    height: 100px;
+    width: 100px;
+    background-color: teal;
+}
+.one , .two, .three, .four{
+    height: 40px;
+    width: 40px;
+}
+.one{
+    background-color: rgb(109, 53, 53);
+}
+.two{
+    background-color: pink;
+}
+.three{
+    background-color: rgb(26, 58, 68);
+}
+.four{
+    background-color: rgb(43, 25, 28);
+}

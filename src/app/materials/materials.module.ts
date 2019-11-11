@@ -6,6 +6,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/';
 const MaterialComponents=[
   MatButtonModule,
   MatGridListModule,
@@ -13,8 +15,9 @@ const MaterialComponents=[
   MatSidenavModule,
   MatIconModule,
   MatTabsModule,
-  MatTreeModule
-
+  MatTreeModule,
+  MatDividerModule,
+  MatListModule
 ];
 @NgModule({
   imports: [
