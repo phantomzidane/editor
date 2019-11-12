@@ -19,16 +19,22 @@ export class PageComponent implements OnInit {
  test(event){
    
     let frame = document.querySelector('#frame');
+    
        let tt=frame.contentWindow.document.querySelector('html');
-       this.data= tt
+       this.data= tt;
+       frame.contentWindow.document.querySelector('body').setAttribute('cdkDropList','');
        tt.addEventListener('click',function(e){
          e.target.style.color="red"
        })
+       tt.addEventListener('click',function(e){
+        e.target.setAttribute('cdkDrag','')
+       console.log(e.target.attributes) 
+      })
    console.log(tt)
    console.log(this.data)
  }
  drop(event){
-  console.log(event)
+  console.log
  }
 
 }

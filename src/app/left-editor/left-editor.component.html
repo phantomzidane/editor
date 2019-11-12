@@ -48,17 +48,11 @@
               Policy
             </a>
           </div>
-        <div class="others"  id="left" cdkDropList cdkDropListConnectedTo="frame">
-            <br>
-            <div cdkDrag> dolor sit, amet consectetur adipisicing
-             elit. Illo maiores culpa repellat voluptatum 
-            odio tenetur reiciendis accusamus voluptatibus. Alias cum dolorum 
-            quibusdam dolor incidunt velit ullam quasi! Beatae, necessitatibus
-             distinctio?Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Illo maiores culpa repellat voluptatum 
-           odio tenetur reiciendis accusamus voluptatibus. Alias cum dolorum 
-           quibusdam dolor incidunt velit ullam quasi! Beatae, necessitatibus distinctio?</div> 
+          <div cdkDropList id="left" cdkDropListConnectedTo="frame" (cdkDropListDropped)="drop($event)">
+            <div cdkDrag *ngFor="let num of numbers">{{num}}</div>
+            
         </div>
+     
         </div> 
          <mat-divider></mat-divider>
          <div class="section">
