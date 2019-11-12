@@ -11,5 +11,7 @@ export class ToolbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  check(event){
+    console.log(event)
+  }
 }

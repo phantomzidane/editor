@@ -1,3 +1,4 @@
-<div class="section iframe">
-    <iframe src="http://localhost:4200"  width="100%"></iframe>
-</div>
+<div class="section iframe"(click)="test($event)">
+    <iframe id="frame" cdkDropList (cdkDropListDropped)="drop($event)" cdkDropListConnectedTo="left" src="http://localhost:4200" width="100%" height="1000%"  ></iframe>
+   
+   </div>

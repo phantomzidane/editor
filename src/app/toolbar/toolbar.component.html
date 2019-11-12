@@ -1,9 +1,9 @@
-<mat-toolbar>
+<mat-toolbar (click)="check($event)">
     <mat-toolbar-row>
-        <span  class="navbar-item"><mat-icon>folder</mat-icon>File</span>
-        <span  class="navbar-item"><mat-icon>save</mat-icon>save</span>
-        <span class="navbar-item"><mat-icon>undo</mat-icon>undo</span>
-        <span  class="navbar-item"><mat-icon>redo</mat-icon>redo</span>
+        <span  class="navbar-item"><mat-icon class="folder ">folder</mat-icon>File</span>
+        <span  class="navbar-item"><mat-icon class="save ">save</mat-icon>save</span>
+        <span class="navbar-item"><mat-icon class="undo ">undo</mat-icon>undo</span>
+        <span  class="navbar-item"><mat-icon class="redo ">redo</mat-icon>redo</span>
         <span class="example-spacer"></span>
         <mat-icon class="end">smartphone</mat-icon>
         <mat-icon class="end">tablet</mat-icon>

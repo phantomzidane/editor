@@ -9,6 +9,7 @@ import {MatTreeModule} from '@angular/material/tree';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/';
 import {MatChipsModule} from '@angular/material/chips';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 const MaterialComponents=[
   MatButtonModule,
   MatGridListModule,
@@ -19,7 +20,8 @@ const MaterialComponents=[
   MatTreeModule,
   MatDividerModule,
   MatListModule,
-  MatChipsModule
+  MatChipsModule,
+  DragDropModule
 ];
 @NgModule({
   imports: [
