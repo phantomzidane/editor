@@ -22,3 +22,9 @@
 .four{
     background-color: rgb(43, 25, 28);
 }
+.item{
+    cursor: default;
+    padding-left: 20px;
+    -moz-user-select: none;
+    user-select: none;
+}

@@ -5,7 +5,7 @@
         <div class="section">
             <!-- searchform -->
             <div class="field">
-            <p class="control has-icons-left">
+            <p class="control has-icons-left" >
               <input class="input" type="text" placeholder="search">
               <span class="icon is-small is-left">
                 <mat-icon>search</mat-icon>
@@ -13,65 +13,19 @@
             </p>
           </div>
           <!-- searchform ends -->
-          <div class="list ">
-            <a class="list-item">
-              Featured
-            </a>
-            <a class="list-item">
-              All Posts
-            </a>
-            <a class="list-item is-active">
-              Announcements
-            </a>
-            <a class="list-item">
-              Business
-            </a>
-            <a class="list-item">
-              Community
-            </a>
-            <a class="list-item">
-              Data
-            </a>
-            <a class="list-item">
-              Editor Tools
-            </a>
-            <a class="list-item">
-              Education
-            </a>
-            <a class="list-item">
-              Engineering
-            </a>
-            <a class="list-item">
-              Events
-            </a>
-            <a class="list-item">
-              Policy
-            </a>
-          </div>
-          <div cdkDropList id="left" cdkDropListConnectedTo="frame" (cdkDropListDropped)="drop($event)">
-            <div cdkDrag *ngFor="let num of numbers">{{num}}</div>
-            
+      <header>
+         <div class="details">          
+          <a href="#" class="navbar-item" (click)="showComponents()">Components  <mat-icon>{{ componentIcon }}</mat-icon> </a> 
+          <ul *ngIf="!ComponentsBool">
+            <li class="item" draggable="true" (dragover)="onDragOver($event)">navbar</li>
+            <li class="item" draggable="true" (dragover)="onDragOver($event)">Card</li>
+            <li class="item" draggable="true" (dragover)="onDragOver($event)">BreadCrumb</li>
+            <li class="item" draggable="true" (dragover)="onDragOver($event)">Dropdown</li>
+            <li class="item" draggable="true" (dragover)="onDragOver($event)">Massage</li>
+          </ul>
         </div>
-     
-        </div> 
-         <mat-divider></mat-divider>
-         <div class="section">
-             <h1 class="subtitle">Colors</h1>
-             <div class="columns">
-                 <div class="column is-6"> <div class="mainColor"></div>#ffee32</div>
-                 <div class="column is-2"></div>
-                 <div class="column is-4">
-                     <div class="row">
-                         <div class="one"></div>
-                         <div class="two"></div>
-                         <div class="three"></div>
-                         <div class="four"></div>
-                     </div>
-                 </div>
-                 
-             </div>
-            <button mat-raised-button color="primary">color picker</button>
-         </div>
+      </header>
+        </div>
     </mat-tab>
 </mat-tab-group>
 </div>
