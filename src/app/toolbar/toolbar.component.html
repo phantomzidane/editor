@@ -1,10 +1,10 @@
-<mat-toolbar (click)="check($event)">
+<mat-toolbar>
     <mat-toolbar-row>
-        <span  class="navbar-item"><mat-icon class="folder ">folder</mat-icon>File</span>
-        <span  class="navbar-item"><mat-icon class="save ">save</mat-icon>save</span>
-        <span class="navbar-item"><mat-icon class="undo ">undo</mat-icon>undo</span>
-        <span  class="navbar-item"><mat-icon class="redo ">redo</mat-icon>redo</span>
-        <span class="example-spacer"></span>
+        <span  class="navbar-item btn"><mat-icon class="folder ">folder</mat-icon>File</span>
+        <span class="navbar-item btn"><mat-icon class="save ">save</mat-icon>save</span>
+        <span (click)="undo($event)" class="navbar-item btn"><mat-icon class="undo ">undo</mat-icon>undo</span>
+        <span (click)="redu($event)" class="navbar-item btn"><mat-icon class="redo ">redo</mat-icon>redo</span>
+        <span  class="example-spacer"></span>
         <mat-icon class="end">smartphone</mat-icon>
         <mat-icon class="end">tablet</mat-icon>
         <mat-icon class="end">laptop</mat-icon>

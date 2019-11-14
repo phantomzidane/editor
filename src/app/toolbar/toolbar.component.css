@@ -23,3 +23,7 @@
   .navbar-item{
     color: rgb(235, 235, 235);
   }
+  .btn{
+    -moz-user-select: none;
+    user-select: none;
+  }

@@ -14,4 +14,10 @@ export class ToolbarComponent implements OnInit {
   check(event){
     console.log(event)
   }
+  undo(event){
+
+  }
+  redu(event){
+
+  }
 }
